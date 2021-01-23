@@ -1,3 +1,3 @@
 # My web page
- A simple example of the web page
+ A simple example of the web page \n
  Used vanilla js to create the open and close effect of the account bar
