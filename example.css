@@ -1,0 +1,138 @@
+*
+{
+    margin: 0px;
+}
+body
+{
+    background-color: white;
+}
+#top-bar
+{
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(8px);
+}
+#start
+{
+    margin-left: 10px;
+    margin-top: 20px;
+    position: absolute;
+}
+#menu
+{
+    margin-left: 10px;
+    float: right;
+}
+#menu ul li
+{
+    margin: 5px;
+    padding: 5px;
+    border-radius: 7px;
+    background-color: none;
+    display: inline-block;
+}
+#links
+{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+#menu ul li:hover
+{
+    transition-duration: 1s;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(8px);
+    color: black;
+}
+#menu ul li:hover #links
+{
+    transition-duration: 1s;
+    color: black;
+}
+#logo
+{
+    margin-top: 3px;
+    height: 30px;
+    width: 50px;
+    float: right;
+}
+#account img
+{
+    visibility: hidden;
+    background-color: none;
+    height: 30px;
+    width: 50px;
+    margin: 0px;
+    border: none;
+}
+#about
+{
+    margin-left: -300px;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(8px);
+    position: absolute;
+    height: 100%;
+    width: 300px;
+    color: white;
+}
+#account
+{
+    height: 40px;
+    background-color:  rgba(0, 0, 0, 0);
+    border: none;
+    margin: none;
+    position: absolute;
+}
+#open
+{
+    margin: 5px;
+    border: none;
+    background-color: white;
+    height: 1.5px;
+    width: 20px;
+}
+#close
+{
+    position: absolute;
+    height: 30px;
+    width: 50px;
+    border: none;
+    background-color:  rgba(0, 0, 0, 0);
+    color: white;
+}
+#closeLine
+{
+    margin-bottom: -1.5px;
+    border: none;
+    height: 1.5px;
+    background-color: white;
+    width: 25px;
+    transform: rotate(45deg);
+}
+#closeLine2
+{
+    margin-top: -1.5px;
+    border: none;
+    height: 1.5px;
+    background-color: white;
+    width: 25px;
+    transform: rotate(-45deg);
+}
+#accountName
+{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: white;
+    margin-left: 50px;
+}
+@media screen and ( max-width:480px )
+{
+    #menu
+    {
+        visibility: hidden;
+    }
+    
+}
