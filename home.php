@@ -1,5 +1,4 @@
 <?php
-echo "Hello ".$_GET['name'];
-include( 'Home.html');
-
+include('Home.html');
+exit("done");
 ?>
