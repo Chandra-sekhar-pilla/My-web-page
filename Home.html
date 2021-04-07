@@ -10,26 +10,40 @@
 <body>
     <div id="top-bar" class="top-bar">
         <button id="account" onclick="fader()">
-            <hr id="open">
-            <hr id="open">
+            <hr class="open" id = "openHr">
+            <hr class="open" id="openHr2">
         </button>
         <a href="arc reactor.png" target="arc reactor"><img src="arc reactor.png" id="logo"></a>
+        
         <nav id="menu">
             <ul>
-                <li><a href="Home.html" id="links">Home</a></li>
-                <li><a href="aboutme.html" id="links">About Me</a></li>
-                <li><a href="contact.html" id="links">Contact Me</a></li>
+                <li><a href="Home.html" class="links">Home</a></li>
+                <li><a href="aboutme.html" class="links">About Me</a></li>
+                <li><a href="contact.html" class="links">Contact Me</a></li>
             </ul>
         </nav>
+        <button id="switchMode" class="mode" onclick="mode()"><img src="mode.png" alt="Mode" id="LDmode"></button>
     </div>
     <div id="about"><button id="close" onclick="al()">
             <hr id="closeLine">
-            <hr id="closeLine2">
-    
-    </button>
+            <hr id="closeLine2"></button>
+            <br/><br />
+            <a href="arc reactor.png" target="arc reactor"><img src="arc reactor.png" id="pfp"></a>
+            <nav id = "aboutMenu">
+                <ul>
+                    <li><a href="settings.html" class="aboutlnks">Settings</a></li>
+                    <li><a href="profile.html" class="aboutlnks">Profile</a></li>
+                    <li><a href="logout.html" class="aboutlnks">Log Out</a></li>
+                </ul>
+            </nav>
     </div>
-    <div id="example"> hello world</div>
-    <div><form method="GET">
-        <input type="text" name="Name">
-    </form> </div>
+    <div class="matter">
+        <h1 id="mainHead">Some of my great projects</h1>
+        <section>
+        <h2>Arc-Reactor in blender</h2>
+        <article>So here is my first rendering image and a model too is Arc-Reactor. we can see arc reactor in iron-man.</article>
+        <img src="arc reactor.png" alt="arc-reactor" id="arc-reactor">
+        <img src="spiderman.png" alt="spiderman" id="spiderman">
+        </section>
+    </div>
 </body>
