@@ -175,17 +175,18 @@ body
     width: 500px;
     margin-left: 500px;
     border-radius: 20px;
-    float: right;
     margin: 10px;
 }
 .content{
     color: #03cffc;
     transition: 0.6s;
-    margin-top: 10px;
+    margin: 10px;
     text-align: center;
-    font-size: 20px;
+    font-size: 35px;
     font-weight: bold;
     font-family: cursive;
+    border-radius: 10px;
+    background-color: rgb(58, 58, 58);
 }
 @media screen and ( max-width:480px )
 {
@@ -235,13 +236,15 @@ body
     transform: rotate(-45deg);
 }
 .lightmatter{
-    color: black;
-    margin-top: 10px;
+    color: #03cffc;
+    transition: 0.6s;
+    margin: 10px;
     text-align: center;
-    font-size: 20px;
+    font-size: 35px;
     font-weight: bold;
     font-family: cursive;
-    transition: 0.6s;
+    border-radius: 10px;
+    background-color: #ececec;
 }
 .lightAbout{
     margin-left: -300px;
