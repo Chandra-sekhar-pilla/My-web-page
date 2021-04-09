@@ -53,33 +53,33 @@ function mode() {
 
     //switching background colors and colors
     if (theme) {
-        cName('about', 'about', 'lightAbout')
-        cName('top-bar', 'top-bar', 'lightTop-Bar')
-        cName('openHr', 'open', 'light-hrs')
-        cName('openHr2', 'open', 'light-hrs')
-        cName('closeLine', 'close1', 'light-close1')
-        cName('closeLine2', 'close2', 'light-close2')
-        cName('matter', 'content', 'lightmatter')
-        cName('matter2', 'content', 'lightmatter')
-        cName('body', '', 'white-body')
+        ChangeClassName('about', 'about', 'lightAbout')
+        ChangeClassName('top-bar', 'top-bar', 'lightTop-Bar')
+        ChangeClassName('openHr', 'open', 'light-hrs')
+        ChangeClassName('openHr2', 'open', 'light-hrs')
+        ChangeClassName('closeLine', 'close1', 'light-close1')
+        ChangeClassName('closeLine2', 'close2', 'light-close2')
+        ChangeClassName('matter', 'content', 'lightmatter')
+        ChangeClassName('matter2', 'content', 'lightmatter')
+        ChangeClassName('body', '', 'white-body')
         switchMode.src = "darkmode.png";
         theme = false
     }
     else {
-        cName('about', 'lightAbout', 'about')
-        cName('top-bar', 'lightTop-Bar', 'top-bar')
-        cName('openHr', 'light-hrs', 'open')
-        cName('openHr2', 'light-hrs', 'open')
-        cName('closeLine', 'light-close1', 'close1')
-        cName('closeLine2', 'light-close2', 'close2')
-        cName('matter', 'lightmatter', 'content')
-        cName('matter2', 'lightmatter', 'content')
-        cName('body', 'white-body', '')
+        ChangeClassName('about', 'lightAbout', 'about')
+        ChangeClassName('top-bar', 'lightTop-Bar', 'top-bar')
+        ChangeClassName('openHr', 'light-hrs', 'open')
+        ChangeClassName('openHr2', 'light-hrs', 'open')
+        ChangeClassName('closeLine', 'light-close1', 'close1')
+        ChangeClassName('closeLine2', 'light-close2', 'close2')
+        ChangeClassName('matter', 'lightmatter', 'content')
+        ChangeClassName('matter2', 'lightmatter', 'content')
+        ChangeClassName('body', 'white-body', '')
         switchMode.src = "mode.png";
         theme = true
     }
 
-    function cName(elementId, preClass, aftClass) {
+    function ChangeClassName(elementId, preClass, aftClass) {
         var el = document.getElementById(`${elementId}`)
         el.className = el.className.replace(`${preClass}`, `${aftClass}`);
     }
