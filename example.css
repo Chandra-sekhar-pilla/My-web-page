@@ -71,7 +71,7 @@ body
 {
     margin-left: -300px;
     background-color: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(6px);
     position: fixed;
     height: 100%;
     width: 300px;
@@ -249,7 +249,7 @@ body
 .lightAbout{
     margin-left: -300px;
     background-color: rgba(160, 160, 160, 0.6);
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(6px);
     position: fixed;
     height: 100%;
     width: 300px;
