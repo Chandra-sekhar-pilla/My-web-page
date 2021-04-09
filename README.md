@@ -6,5 +6,7 @@
  Added more functionality and some quick buttons too.
  
  Hope you will learn something and thankyou.
+
  You can support me in patreon here is the link for that: [Patreon: The Atelier](https://www.patreon.com/the_Atelier)
+ 
  You can join my discord server here: [The Atelier](https://discord.gg/6Mcy5NpSpH)
