@@ -1,15 +1,15 @@
 /*css for dark theme*/
-*
-{
+
+* {
     margin: 0px;
 }
-body
-{
+
+body {
     background-color: black;
     transition: 0.6s;
 }
-.top-bar
-{
+
+.top-bar {
     position: fixed;
     width: 100%;
     height: 40px;
@@ -17,58 +17,56 @@ body
     backdrop-filter: blur(8px);
     transition: 0.6s;
 }
-#menu
-{
+
+#menu {
     margin-left: 10px;
     float: right;
 }
-#menu ul li
-{
+
+#menu ul li {
     margin: 5px;
     padding: 5px;
     border-radius: 7px;
     background-color: none;
     display: inline-block;
 }
-.links
-{
+
+.links {
     color: white;
     text-align: center;
     text-decoration: none;
 }
-#menu ul li:hover
-{
+
+#menu ul li:hover {
     transition-duration: 1s;
     background-color: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(8px);
     color: black;
 }
-#menu ul li:hover .links
-{
+
+#menu ul li:hover .links {
     transition-duration: 1s;
     color: black;
 }
-#logo
-{
+
+#logo {
     margin-top: 3px;
     height: 30px;
     width: 30px;
     float: right;
     background-color: none;
-    
 }
-#account img
-{
+
+#account img {
     visibility: hidden;
     background-color: none;
     height: 30px;
     width: 50px;
     margin: 0px;
     border: none;
-    
 }
-.about
-{
+
+.about {
     margin-left: -300px;
     background-color: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(6px);
@@ -77,39 +75,40 @@ body
     width: 300px;
     color: white;
 }
-#account
-{
+
+#account {
     height: 40px;
-    background-color:  rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
     border: none;
     margin: none;
     position: absolute;
 }
-.open
-{
+
+.open {
     margin: 5px;
     border: none;
     background-color: white;
     height: 1.5px;
     width: 20px;
 }
-#close
-{
+
+#close {
     position: absolute;
     height: 30px;
     width: 50px;
     border: none;
-    background-color:  rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
     color: white;
     transition: 0.6s;
     margin: 5px;
 }
-#LDmode{
+
+#LDmode {
     height: 30px;
     width: 40px;
 }
-.close1
-{
+
+.close1 {
     margin-bottom: -1.5px;
     border: none;
     height: 1.5px;
@@ -118,8 +117,8 @@ body
     transform: rotate(45deg);
     transition: 0.6s;
 }
-.close2
-{
+
+.close2 {
     margin-top: -1.5px;
     border: none;
     height: 1.5px;
@@ -128,14 +127,16 @@ body
     transform: rotate(-45deg);
     transition: 0.6s;
 }
-.aboutlnks{
+
+.aboutlnks {
     color: white;
     text-align: center;
     text-decoration: none;
     transition: 0.6s;
     margin: 5px;
 }
-.mode{
+
+.mode {
     border: none;
     height: 40px;
     width: 45px;
@@ -143,8 +144,8 @@ body
     float: right;
     transition: 0.6s;
 }
-#aboutMenu ul li
-{
+
+#aboutMenu ul li {
     width: 200px;
     margin: 5px;
     padding: 5px;
@@ -154,30 +155,33 @@ body
     text-align: center;
     font-size: 24px;
 }
-#aboutMenu ul li:hover .aboutlnks
-{
+
+#aboutMenu ul li:hover .aboutlnks {
     color: black;
 }
-#pfp{
+
+#pfp {
     height: 200px;
     width: 200px;
     border-radius: 50%;
     margin: 50px;
 }
-#aboutMenu ul li:hover
-{
+
+#aboutMenu ul li:hover {
     background-color: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(8px);
     color: black;
 }
-#arc-reactor, #spiderman{
+
+#arc-reactor, #spiderman {
     height: 500px;
     width: 500px;
     margin-left: 500px;
     border-radius: 20px;
     margin: 10px;
 }
-.content{
+
+.content {
     color: #03cffc;
     transition: 0.6s;
     margin: 10px;
@@ -188,22 +192,21 @@ body
     border-radius: 10px;
     background-color: rgb(58, 58, 58);
 }
-@media screen and ( max-width:480px )
-{
-    #menu
-    {
+
+@media screen and ( max-width:480px) {
+    #menu {
         visibility: hidden;
     }
-    
 }
 
 /*css for light theme*/
-.white-body{
+
+.white-body {
     background-color: white;
     transition: 0.6s;
 }
-.lightTop-Bar
-{
+
+.lightTop-Bar {
     position: fixed;
     width: 100%;
     height: 40px;
@@ -212,14 +215,16 @@ body
     color: black;
     transition: 0.6s;
 }
-.light-hrs{
+
+.light-hrs {
     margin: 5px;
     border: none;
     background-color: black;
     height: 1.5px;
     width: 20px;
 }
-.light-close1{
+
+.light-close1 {
     margin-bottom: -1.5px;
     border: none;
     height: 1.5px;
@@ -227,7 +232,8 @@ body
     width: 25px;
     transform: rotate(45deg);
 }
-.light-close2{
+
+.light-close2 {
     margin-top: -1.5px;
     border: none;
     height: 1.5px;
@@ -235,7 +241,8 @@ body
     width: 25px;
     transform: rotate(-45deg);
 }
-.lightmatter{
+
+.lightmatter {
     color: #03cffc;
     transition: 0.6s;
     margin: 10px;
@@ -246,7 +253,8 @@ body
     border-radius: 10px;
     background-color: #ececec;
 }
-.lightAbout{
+
+.lightAbout {
     margin-left: -300px;
     background-color: rgba(160, 160, 160, 0.6);
     backdrop-filter: blur(6px);
