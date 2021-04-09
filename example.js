@@ -48,41 +48,40 @@ window.onload = function () {
     theme = true
 }
 function mode() {
-    var toOpen = document.getElementById('about');
-    var accountButtonHr = document.getElementById('closeLine');
-    var accountButtonHr2 = document.getElementById('closeLine2');
-    var topBar = document.getElementById('top-bar');
-    var openButton = document.getElementById('openHr');
-    var openButton2 = document.getElementById('openHr2');
     var switchMode = document.getElementById('LDmode');
-    var body = document.getElementById('body');
-    var matter = document.getElementById('matter');
+
 
     //switching background colors and colors
     if (theme) {
-        toOpen.className = toOpen.className.replace(/(?:^|\s)about(?!\S)/g, 'lightAbout');
-        topBar.className = topBar.className.replace(/(?:^|\s)top-bar(?!\S)/g, 'lightTop-Bar');
-        openButton.className = openButton.className.replace(/(?:^|\s)open(?!\S)/g, 'light-hrs');
-        openButton2.className = openButton2.className.replace(/(?:^|\s)open(?!\S)/g, 'light-hrs');
-        accountButtonHr.className = accountButtonHr.className.replace(/(?:^|\s)close1(?!\S)/g, 'light-close1');
-        accountButtonHr2.className = accountButtonHr2.className.replace(/(?:^|\s)close2(?!\S)/g, 'light-close2');
-        matter.className = matter.className.replace(/(?:^|\s)content(?!\S)/g, 'lightmatter');
-        body.className = body.className.replace(/(?:^|\s)(?!\S)/g, 'white-body')
-        console.log(body.className)
+        cName('about', 'about', 'lightAbout')
+        cName('top-bar', 'top-bar', 'lightTop-Bar')
+        cName('openHr', 'open', 'light-hrs')
+        cName('openHr2', 'open', 'light-hrs')
+        cName('closeLine', 'close1', 'light-close1')
+        cName('closeLine2', 'close2', 'light-close2')
+        cName('matter', 'content', 'lightmatter')
+        cName('matter2', 'content', 'lightmatter')
+        cName('body', '', 'white-body')
         switchMode.src = "darkmode.png";
         theme = false
     }
     else {
-        toOpen.className = toOpen.className.replace(/(?:^|\s)lightAbout(?!\S)/g, 'about');
-        topBar.className = topBar.className.replace(/(?:^|\s)lightTop-Bar(?!\S)/g, 'top-bar');
-        openButton.className = openButton.className.replace(/(?:^|\s)light-hrs(?!\S)/g, 'open');
-        openButton2.className = openButton2.className.replace(/(?:^|\s)light-hrs(?!\S)/g, 'open');
-        accountButtonHr.className = accountButtonHr.className.replace(/(?:^|\s)light-close1(?!\S)/g, 'close1');
-        accountButtonHr2.className = accountButtonHr2.className.replace(/(?:^|\s)light-close2(?!\S)/g, 'close2');
-        matter.className = matter.className.replace(/(?:^|\s)lightmatter(?!\S)/g, 'content');
-        body.className = body.className.replace(/(?:^|\s)white-body(?!\S)/g, '')
-        console.log(body.className)
+        cName('about', 'lightAbout', 'about')
+        cName('top-bar', 'lightTop-Bar', 'top-bar')
+        cName('openHr', 'light-hrs', 'open')
+        cName('openHr2', 'light-hrs', 'open')
+        cName('closeLine', 'light-close1', 'close1')
+        cName('closeLine2', 'light-close2', 'close2')
+        cName('matter', 'lightmatter', 'content')
+        cName('matter2', 'lightmatter', 'content')
+        cName('body', 'white-body', '')
         switchMode.src = "mode.png";
         theme = true
     }
+
+    function cName(elementId, preClass, aftClass) {
+        var el = document.getElementById(`${elementId}`)
+        el.className = el.className.replace(`${preClass}`, `${aftClass}`);
+    }
 }
+
