@@ -171,10 +171,16 @@ body
     height: 300px;
     width: 500px;
     margin-left: 500px;
+    border-radius: 20px;
 }
-.matter{
-    color: white;
+.content{
+    color: #03cffc;
     transition: 0.6s;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: cursive;
 }
 @media screen and ( max-width:480px )
 {
@@ -225,6 +231,12 @@ body
 }
 .lightmatter{
     color: black;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: cursive;
+    transition: 0.6s;
 }
 .lightAbout{
     margin-left: -300px;

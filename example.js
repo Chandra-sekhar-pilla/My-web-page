@@ -66,7 +66,7 @@ function mode() {
         openButton2.className = openButton2.className.replace(/(?:^|\s)open(?!\S)/g, 'light-hrs');
         accountButtonHr.className = accountButtonHr.className.replace(/(?:^|\s)close1(?!\S)/g, 'light-close1');
         accountButtonHr2.className = accountButtonHr2.className.replace(/(?:^|\s)close2(?!\S)/g, 'light-close2');
-        matter.className = matter.className.replace(/(?:^|\s)matter(?!\S)/g, 'lightmatter');
+        matter.className = matter.className.replace(/(?:^|\s)content(?!\S)/g, 'lightmatter');
         body.className = body.className.replace(/(?:^|\s)(?!\S)/g, 'white-body')
         console.log(body.className)
         switchMode.src = "darkmode.png";
@@ -79,7 +79,7 @@ function mode() {
         openButton2.className = openButton2.className.replace(/(?:^|\s)light-hrs(?!\S)/g, 'open');
         accountButtonHr.className = accountButtonHr.className.replace(/(?:^|\s)light-close1(?!\S)/g, 'close1');
         accountButtonHr2.className = accountButtonHr2.className.replace(/(?:^|\s)light-close2(?!\S)/g, 'close2');
-        matter.className = matter.className.replace(/(?:^|\s)lightmatter(?!\S)/g, 'matter');
+        matter.className = matter.className.replace(/(?:^|\s)lightmatter(?!\S)/g, 'content');
         body.className = body.className.replace(/(?:^|\s)white-body(?!\S)/g, '')
         console.log(body.className)
         switchMode.src = "mode.png";
