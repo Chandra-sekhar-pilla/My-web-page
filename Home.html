@@ -7,14 +7,14 @@
     <script src="example.js"></script>
 </head>
 
-<body>
+<body id="body" >
+    <!--Don't mess here because things will go wrong-->
     <div id="top-bar" class="top-bar">
         <button id="account" onclick="fader()">
             <hr class="open" id = "openHr">
             <hr class="open" id="openHr2">
         </button>
         <a href="arc reactor.png" target="arc reactor"><img src="arc reactor.png" id="logo"></a>
-        
         <nav id="menu">
             <ul>
                 <li><a href="Home.html" class="links">Home</a></li>
@@ -24,9 +24,9 @@
         </nav>
         <button id="switchMode" class="mode" onclick="mode()"><img src="mode.png" alt="Mode" id="LDmode"></button>
     </div>
-    <div id="about"><button id="close" onclick="al()">
-            <hr id="closeLine">
-            <hr id="closeLine2"></button>
+    <div id="about" class="about"><button id="close" onclick="al()">
+            <hr id="closeLine" class="close1">
+            <hr id="closeLine2" class="close2"></button>
             <br/><br />
             <a href="arc reactor.png" target="arc reactor"><img src="arc reactor.png" id="pfp"></a>
             <nav id = "aboutMenu">
@@ -37,7 +37,9 @@
                 </ul>
             </nav>
     </div>
-    <div class="matter">
+    <!--Don't mess upto here because things will go wrong messing things is nothing but don't add anything-->
+    <img src = 'arc reactor.png' alt='arc-reactor'>
+    <div class="matter" id="matter">
         <h1 id="mainHead">Some of my great projects</h1>
         <section>
         <h2>Arc-Reactor in blender</h2>

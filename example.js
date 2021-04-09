@@ -1,3 +1,5 @@
+var theme;
+
 function fader() {
     var toOpen = document.getElementById('about');
     var accountButton = document.getElementById('account');
@@ -16,6 +18,7 @@ function fader() {
             pos += 10;
             toOpen.style.left = pos + 'px';
             accountButton.style.left = pos + 'px';
+            console.log(toOpen.offsetLeft)
         }
     }
 };
@@ -41,32 +44,45 @@ function al() {
     }
 };
 
+window.onload = function () {
+    theme = true
+}
 function mode() {
     var toOpen = document.getElementById('about');
-    var accountButton = document.getElementById('closeLine');
-    var accountButton2 = document.getElementById('closeLine2');
+    var accountButtonHr = document.getElementById('closeLine');
+    var accountButtonHr2 = document.getElementById('closeLine2');
     var topBar = document.getElementById('top-bar');
-    var openButton = document.getElementById('openHr')
-    var openButton2 = document.getElementById('openHr2')
-    var switchMode = document.getElementById('LDmode')
+    var openButton = document.getElementById('openHr');
+    var openButton2 = document.getElementById('openHr2');
+    var switchMode = document.getElementById('LDmode');
+    var body = document.getElementById('body');
+    var matter = document.getElementById('matter');
 
     //switching background colors and colors
-    if (toOpen.style.backgroundColor === 'rgba(0, 0, 0, 0.8)') {
-        toOpen.style.backgroundColor = 'rgba(160, 160, 160, 0.8)';
-        topBar.style.backgroundColor = 'rgba(160, 160, 160, 0.8)';
-        openButton.style.backgroundColor = 'black';
-        openButton2.style.backgroundColor = 'black';
-        accountButton.style.backgroundColor = 'black';
-        accountButton2.style.backgroundColor = 'black';
-        switchMode.src = "darkmode.png"
+    if (theme) {
+        toOpen.className = toOpen.className.replace(/(?:^|\s)about(?!\S)/g, 'lightAbout');
+        topBar.className = topBar.className.replace(/(?:^|\s)top-bar(?!\S)/g, 'lightTop-Bar');
+        openButton.className = openButton.className.replace(/(?:^|\s)open(?!\S)/g, 'light-hrs');
+        openButton2.className = openButton2.className.replace(/(?:^|\s)open(?!\S)/g, 'light-hrs');
+        accountButtonHr.className = accountButtonHr.className.replace(/(?:^|\s)close1(?!\S)/g, 'light-close1');
+        accountButtonHr2.className = accountButtonHr2.className.replace(/(?:^|\s)close2(?!\S)/g, 'light-close2');
+        matter.className = matter.className.replace(/(?:^|\s)matter(?!\S)/g, 'lightmatter');
+        body.className = body.className.replace(/(?:^|\s)(?!\S)/g, 'white-body')
+        console.log(body.className)
+        switchMode.src = "darkmode.png";
+        theme = false
     }
     else {
-        toOpen.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
-        topBar.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
-        openButton.style.backgroundColor = 'white';
-        openButton2.style.backgroundColor = 'white';
-        accountButton.style.backgroundColor = 'white';
-        accountButton2.style.backgroundColor = 'white';
-        switchMode.src = "mode.png"
+        toOpen.className = toOpen.className.replace(/(?:^|\s)lightAbout(?!\S)/g, 'about');
+        topBar.className = topBar.className.replace(/(?:^|\s)lightTop-Bar(?!\S)/g, 'top-bar');
+        openButton.className = openButton.className.replace(/(?:^|\s)light-hrs(?!\S)/g, 'open');
+        openButton2.className = openButton2.className.replace(/(?:^|\s)light-hrs(?!\S)/g, 'open');
+        accountButtonHr.className = accountButtonHr.className.replace(/(?:^|\s)light-close1(?!\S)/g, 'close1');
+        accountButtonHr2.className = accountButtonHr2.className.replace(/(?:^|\s)light-close2(?!\S)/g, 'close2');
+        matter.className = matter.className.replace(/(?:^|\s)lightmatter(?!\S)/g, 'matter');
+        body.className = body.className.replace(/(?:^|\s)white-body(?!\S)/g, '')
+        console.log(body.className)
+        switchMode.src = "mode.png";
+        theme = true
     }
 }
