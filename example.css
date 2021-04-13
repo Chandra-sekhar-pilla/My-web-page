@@ -193,12 +193,6 @@ body {
     background-color: rgb(58, 58, 58);
 }
 
-@media screen and ( max-width:480px) {
-    #menu {
-        visibility: hidden;
-    }
-}
-
 /*css for light theme*/
 
 .white-body {
@@ -262,4 +256,27 @@ body {
     height: 100%;
     width: 300px;
     color: black;
+}
+
+/*css for android site*/
+
+@media screen and ( max-width:480px) {
+    #menu {
+        visibility: hidden;
+    }
+    .about {
+        width: 150px;
+    }
+    #pfp {
+        height: 50px;
+        width: 50px;
+    }
+    #aboutMenu ul li {
+        width: 100px;
+        margin-left: 10px;
+        font-size: 18px;
+    }
+    .lightAbout {
+        width: 150px;
+    }
 }
